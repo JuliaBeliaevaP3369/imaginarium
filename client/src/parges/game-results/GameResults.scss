@@ -1,0 +1,108 @@
+.game-results {
+    height :  100%;
+    display: flex;
+    justify-content: center;
+  background: url(/assets/images/background.png) no-repeat top center;
+  background-size: cover;
+  .container
+  {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+    background-size: cover;
+  }
+  .first_text /* Упс, Иван! */
+  {
+    margin-top: 95%;
+    font-size: 24px;
+    text-align: center;
+    color: #11335A;
+  }
+  h1 /* Ты проиграл... */
+  {
+    font-size: 36px;
+    text-align: center;
+    color: #11335A;
+  }
+  .box_bottom /*нижняя кнопка*/
+  {
+    border: 0px;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    width: 274px;
+    height: 46px;
+    background: #E86549;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 43px;
+    color: #F6F5F0;
+  }
+  .table
+  {
+    margin-top: 17%;
+  }
+  .line
+  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .name
+  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 109px;
+    height: 33px;
+    background: #00939A;
+    font-size: 18px;
+    color: #F6F5F0;
+  }
+  .free_space
+  {
+    width: 20px;
+    height: 33px;
+    background: #00939A;
+  }
+  .score
+  {
+    width: 63px;
+    height: 33px;
+    background: #11335A;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  dt:last-child {
+    .score {
+      border-radius: 0 0 10px 0;
+    }
+
+    .free_space {
+      border-radius: 0 0 0 10px;
+    }
+  }
+
+  dt:first-child {
+    .score {
+      border-radius: 0 10px 0 0;
+      color: #FFCC66;
+    }
+
+    .free_space {
+      border-radius: 10px 0 0 0;
+      background: #11335A;
+    }
+
+    .name {
+      background: #11335A;
+    }
+  }
+}

@@ -1,0 +1,346 @@
+.main {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+
+  .my_grid
+  {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 37.5% 37.5%;
+    flex: auto;
+  }
+  .box1 /*верхняя часть*/
+  {
+    background: #11335A;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .box2 /*средняя часть*/
+  {
+    background: #E86549;
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box3 /*нижняя часть*/
+  {
+    background: #11335A;
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .line
+  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .name
+  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 109px;
+    height: 33px;
+    background: #00939A;
+    font-size: 18px;
+    color: #F6F5F0;
+  }
+  .free_space
+  {
+    width: 20px;
+    height: 33px;
+    background: #00939A;
+  }
+  .score
+  {
+    width: 63px;
+    height: 33px;
+    background: #E86549;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .leader	/* Ведущий: */
+  {
+    width: 115px;
+    height: 84px;
+    background: #00939A;
+    font-weight: bold;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+  }
+  .leader_name
+  {
+    width: 115px;
+    height: 54px;
+    background: #E86549;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+  }
+  .assotiation
+  {
+    width: 140px;
+    height: 84px;
+    background: #00939A;
+    font-weight: bold;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 0;
+  }
+  .to_do
+  {
+    width: 140px;
+    height: 54px;
+    background: #E86549;
+    font-weight: bold;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+  }
+  .info1
+  {
+    width: 578px;
+    height: 84px;
+    background: #00939A;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info2
+  {
+    width: 578px;
+    height: 54px;
+    background: #E86549;
+    font-size: 18px;
+    color: #F6F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info3
+  {
+    width: 162px;
+    height: 54px;
+    background: #FFCC66;
+    border-radius: 0 0 10px 0;
+    font-size: 18px;
+    text-align: right;
+    color: #11335A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_hidden {
+      background: #E86549;
+      color: #E86549;
+    }
+  }
+  .box
+  {
+    width: 578px;
+    height: 50px;
+    background: #11335A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ready
+  {
+    width: 162px;
+    height: 84px;
+    background: #00939A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 0 0;
+  }
+  button /* Готово */
+  {
+    width: 128px;
+    height: 50px;
+    background: #11335A;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #F6F5F0;
+    border: 0;
+  }
+  .deck
+  {
+    width: 153px;
+    height: 230px;
+    background: #11335A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60px;
+    color: #F6F5F0;
+  }
+  .num
+  {
+    font-weight: 900;
+    font-size: 64px;
+    color: #F6F5F0;
+  }
+  .card
+  {
+    width: 153px;
+    height: 230px;
+    background: #FFB747;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card2
+  {
+    box-sizing: border-box;
+    width: 153px;
+    height: 230px;
+    background: #FFB747;
+    border-radius: 10px;
+    display: flex;
+    background-size: cover;
+
+    &_chosen {
+      border: 5px solid #F6F5F0;
+    }
+  }
+
+  .card2__background {
+    cursor: not-allowed;
+    position: relative;
+
+    .card-text {
+      display: none;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(black, 0.7);
+      font-size: 14px;
+      color: white;
+      line-height: 230px;
+      text-align: center;
+      border-radius: 10px;
+
+    }
+
+    &_chose-available:hover {
+      cursor: pointer;
+      .card-text {
+        display: block !important;
+      }
+    }
+  }
+
+  .association-input {
+    background-color: #11335A;
+    border: none;
+    width: 100%;
+    height: 92%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .vote-results {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+
+    background-color: rgba(black, 0.7);
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+
+    &__selections {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+
+      div:first-child {
+        padding-bottom: 8px;
+      }
+    }
+
+    &__lead {
+      font-weight: bold;
+      padding-top: 10px;
+    }
+  }
+
+  .next-page-button {
+    height: 60px;
+    width: 150px;
+
+    background-color: #FFB747;
+    color: #11335A;
+  }
+
+  .users-points {
+    dt:last-child {
+      .score {
+        border-radius: 0 0 10px 0;
+      }
+
+      .free_space {
+        border-radius: 0 0 0 10px;
+      }
+    }
+
+    dt:first-child {
+      .score {
+        border-radius: 0 10px 0 0;
+      }
+
+      .free_space {
+        border-radius: 10px 0 0 0;
+      }
+    }
+  }
+}

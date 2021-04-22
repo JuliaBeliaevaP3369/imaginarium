@@ -1,0 +1,116 @@
+.preparation {
+  height: 100%;
+  .container
+  {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+    background: url(/assets/images/background.png) no-repeat top center;
+    background-size: cover;
+  }
+  h1/* Имаджинариум */
+  {
+    margin-top: 0%;
+    font-size: 36px;
+    font-weight: 900;
+    color: #F6F5F0;
+    text-align: center;
+  }
+  label/* Введи имя: */
+  {
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    font-size: 24px;
+    color: #11335A;
+  }
+  .ready /* Готовы к игре: 3 / 5 */
+  {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #11335A;
+    margin-top: 7%;
+  }
+  input
+  {
+    width: 274px;
+    height: 46px;
+    background: #F6F5F0;
+    border: 3px solid #E86549;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: left;
+    color: #11335A;
+  }
+  .box_top /*верхняя кнопка*/
+  {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    color: #11335A;
+  }
+  button /* Готов! */
+  {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 274px;
+    height: 46px;
+    background: #E86549;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 24px;
+    line-height: 1.8; /*указать в кратности размера шрифта*/
+    color: #F6F5F0;
+  }
+  .big_box /*контейнер для нижней кнопки*/
+  {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+  }
+
+ .wrapper {
+   .one/* Имаджинариум */
+   {
+     text-align: center;
+     margin-top: 0%;
+     font-weight: 900;
+     font-size: 36px;
+     color: #F6F5F0;
+   }
+   h1/*Привет, Иван!*/
+   {
+     margin-top: 18%;
+     font-size: 24px;
+     line-height: 28px;
+     text-align: center;
+     color: #11335A;
+   }
+   .two /* Игра скоро начнется... */
+   {
+     margin-top: 2%;
+     font-size: 24px;
+     text-align: center;
+     color: #11335A;
+   }
+   .ready /* Готовы к игре: 3 / 5 */
+   {
+     font-size: 18px;
+     text-align: center;
+     color: #11335A;
+     margin-top: 7%;
+   }
+ }
+}
+
+
+
+
+
